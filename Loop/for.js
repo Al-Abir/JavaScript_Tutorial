@@ -41,4 +41,6 @@ for(let access in obj){
 for(let letter of "abir"){
   console.log(letter);
 }
-// Note string and  iterable hot hobe
+
+
+
