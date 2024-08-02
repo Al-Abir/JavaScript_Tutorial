@@ -27,3 +27,12 @@ console.log(b);
 2. var can be updated and allow to redeclared within its scoped
 3. let can be updated but not re-declared
 4. const cn neither be updated not be re-declared.*/
+var prompt = require('prompt-sync')();
+
+let age = prompt("What is your age = ");
+if(age>10 && age<20){
+    console.log("You are adult")
+}
+else{
+    console.log("You are child");
+}
