@@ -29,10 +29,14 @@ console.log(b);
 4. const cn neither be updated not be re-declared.*/
 var prompt = require('prompt-sync')();
 
-let age = prompt("What is your age = ");
+/*let age = prompt("What is your age = ");
 if(age>10 && age<20){
     console.log("You are adult")
 }
 else{
     console.log("You are child");
-}
+}*/
+
+let s ="345"
+s= Number.parseInt(s) + 10;
+ console.log (s)
