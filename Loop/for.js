@@ -18,11 +18,11 @@ for(let i=0; i<a; i++){
 console.log(sum);
 
 //simple for loop
-let obj = {
-    abir:4,
-    nahiyan:5,
-    tosher:6,
-}
+// let obj = {
+//     abir:4,
+//     nahiyan:5,
+//     tosher:6,
+// }
 
 for (let i = 0; i < Object.keys(obj).length; i++) {
     console.log(Object.keys(obj)[i] + ": " + obj[Object.keys(obj)[i]]);
@@ -56,4 +56,13 @@ for(let letter of "abir"){
 }
 
 
+//for each loop
+// let obj = {
+//     abir: 4,
+//     nahiyan: 5,
+//     tosher: 6,
+// };
 
+Object.keys(obj).forEach(function(key) {
+    console.log(key + ": " + obj[key]);
+})
