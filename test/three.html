@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai aur code </title>
+    <title>Document</title>
 </head>
-<body style="background-color: #212121; color: #fff;">
-    
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
 </body>
 <script>
 
-     const div = document.createElement('div');
-      console.log(div)
-      
-      div.className = "main"
-      div.id ="myId"
-      div.setAttribute("title","Pratice code")
-      div.style.backgroundColor="green"
-      div.padding = "10px";
-      div.innerText ="Hello How are"
+// Function to start the timer
+function startTimer() {
+    const hi = document.querySelector('h1').innerHTML = "hello";
+    console.log(hi, Date.now());
+}
 
-    //  const addText = document.createTextNode("helloe aheopw")
-    //  div.appendChild(addText);
-     document.body.appendChild(div)
-    // const div = document.createElement('div')
-    // console.log(div);
-    // div.className = "main"
-    // div.id = Math.round(Math.random() * 10 + 1)
-    // div.setAttribute("title", "generated title")
-    // div.style.backgroundColor = "green"
-    // div.style.padding = "12px"
-    // // div.innerText = "Chai aur code"
-    // const addText = document.createTextNode("Chai aur code")
-    // div.appendChild(addText)
+// Add event listener to the start button
+document.querySelector('#start').addEventListener('click', () => {
+    // Start the timer with a delay of 2000ms (2 seconds)
+   const  clear = setTimeout(startTimer, 2000);
+});
 
-    // document.body.appendChild(div)
+// Add event listener to the stop button
+document.querySelector('#stop').addEventListener('click', () => {
+    // Stop the timer
+    console.log("stop")
+    clearTimeout(clear);
+   
+});
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+
+    // const intervalId = setInterval(sayDate, 1000, "hi")
+
+    // clearInterval(intervalId)
 </script>
 </html>
