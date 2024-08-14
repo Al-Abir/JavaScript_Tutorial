@@ -2,75 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>DOM | Chai aur code</title>
 </head>
-<body style="background-color: #414141; color: aliceblue;">
-    <h2>Amazing image</h2>
-    <div >
-        <ul id="images">
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop" onclick="alert('hello')"></li>
-            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
-            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
-        </ul>
-   </div>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
 </body>
 <script>
+    // const parent = document.querySelector('.parent')
+    // // console.log(parent);
+    // // console.log(parent.children);
+    // // console.log(parent.children[1].innerHTML);
 
-
-    
-    //   document.getElementById('google').addEventListener('click', (e)=>{
-    //        e.preventDefault();
-    //        e.stopPropagation();
-    //        console.log(" Google is clicked ")
-    //   })
-
-
-    //   document.querySelector('#images').addEventListener('click', (e) => {
-    //      console.log(e.target.parentNode)
-    //      let removeIT = e.target.parentNode;
-    //     //  removeIT.remove();
-
-    //       removeIT.parentNode.removeChild(removeIT)
-         
-    //   })
-     
-
-      document.querySelector('#images').addEventListener('click', (e)=>{
-
-              console.log(e.target.tagName)
-
-                if(e.target.tagName ==='IMG'){
-                      let re = e.target.parentNode;
-                      re.remove();
-                }
-      })
-
- 
-
-  
-    
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
-    
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e.target.tagName);
-    //     if (e.target.tagName === 'IMG') {
-    //         console.log(e.target.id);
-    //         let removeIt = e.target.parentNode
-    //         removeIt.remove()
-    //     }
-    
+    // // for (let i = 0; i < parent.children.length; i++) {
+    // //      console.log(parent.children[i].innerHTML);
         
-    // })
-    
-    //removeIt.parentNode.removeChild(removeIt)
+    // // }
+    // parent.children[1].style.color = "orange"
+    // // console.log(parent.firstElementChild);
+    // // console.log(parent.lastElementChild);
+
+    // const dayOne = document.querySelector('.day')
+    // // console.log(dayOne);
+    // // console.log(dayOne.parentElement);
+    // // console.log(dayOne.nextElementSibling);
+
+    // console.log("NODES: ", parent.childNodes);
 </script>
 </html>
