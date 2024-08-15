@@ -9,7 +9,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1",  //symbol ai vabe insilize kore
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -23,7 +23,7 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser)    //freeze mane hosce r update hobena.
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
