@@ -1,0 +1,65 @@
+1. Mouse Events
+click: Fired when the user clicks on an element.
+dblclick: Fired when the user double-clicks on an element.
+mousedown: Fired when the user presses a mouse button over an element.
+mouseup: Fired when the user releases a mouse button over an element.
+mousemove: Fired when the user moves the mouse over an element.
+mouseover: Fired when the mouse pointer moves into the element.
+mouseout: Fired when the mouse pointer leaves the element.
+mouseenter: Fired when the mouse pointer enters the element (does not bubble).
+mouseleave: Fired when the mouse pointer leaves the element (does not bubble).
+contextmenu: Fired when the user right-clicks on an element to open the context menu.
+2. Keyboard Events
+keydown: Fired when the user presses a key on the keyboard.
+keyup: Fired when the user releases a key on the keyboard.
+keypress: Fired when the user presses a key on the keyboard (deprecated, use keydown and keyup instead).
+3. Form Events
+submit: Fired when a form is submitted.
+reset: Fired when a form is reset.
+focus: Fired when an element gains focus (e.g., when clicking on an input field).
+blur: Fired when an element loses focus.
+change: Fired when the value of an input, select, or textarea element changes.
+input: Fired when the user inputs text (more reliable than change for text inputs).
+select: Fired when the user selects text in an input or textarea.
+invalid: Fired when a form element is invalid (e.g., due to required or pattern constraints).
+4. Window Events
+resize: Fired when the window is resized.
+scroll: Fired when the user scrolls in the window or an element.
+load: Fired when the entire page has loaded, including all dependent resources like images and stylesheets.
+unload: Fired when the user leaves the page (e.g., closing the tab or navigating away).
+beforeunload: Fired before the user leaves the page, allowing you to prompt them to stay (e.g., unsaved changes warning).
+5. Clipboard Events
+copy: Fired when the user copies content.
+cut: Fired when the user cuts content.
+paste: Fired when the user pastes content.
+6. Drag and Drop Events
+drag: Fired when an element is being dragged.
+dragstart: Fired when the user starts dragging an element.
+dragend: Fired when the user stops dragging an element.
+dragover: Fired when an element is dragged over a drop target.
+dragenter: Fired when an element enters a drop target.
+dragleave: Fired when an element leaves a drop target.
+drop: Fired when an element is dropped on a drop target.
+7. Media Events
+play: Fired when the media begins playing.
+pause: Fired when the media is paused.
+ended: Fired when the media has finished playing.
+volumechange: Fired when the volume is changed.
+timeupdate: Fired when the current playback position has changed.
+8. Miscellaneous Events
+error: Fired when an error occurs (e.g., loading a script or image).
+focusin: Fired when an element or its child gains focus (bubbles).
+focusout: Fired when an element or its child loses focus (bubbles).
+wheel: Fired when the user scrolls the mouse wheel.
+animationstart: Fired when a CSS animation starts.
+animationend: Fired when a CSS animation ends.
+animationiteration: Fired when a CSS animation repeats.
+transitionend: Fired when a CSS transition completes.
+These events cover a wide range of user interactions and behaviors in a web application. You can use them with addEventListener to create dynamic, interactive web pages.
+
+
+
+
+
+
+
