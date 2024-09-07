@@ -37,9 +37,31 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
 
-  userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"
-})
-  console.log(userBooks);
+  const bookTitles = books.map(book => book.title);
+  console.log("Book Titles:", bookTitles);
+//Book Titles: ['Book One', 'Book Two', 'Book Three', 'Book Four', 'Book Five', 'Book Six', 'Book Seven', 'Book Eight', 'Book Nine']
+
+  const nonFictionBooks = books.filter(book => book.genre === 'Non-Fiction');
+  console.log("Non-Fiction Books:", nonFictionBooks);
+  // Non-Fiction Books: [
+  //   { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+  //   { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+  //   { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 }
+  // ]
+
+
+   const totalYearsBetweenPublishAndEdition = books.reduce((acc, book) => {
+    return acc + (book.edition - book.publish);
+  }, 0);
+  
+  console.log("Total Years Between Publish and Edition:", totalYearsBetweenPublishAndEdition);
+//Total Years Between Publish and Edition: 88
+
+const scienceBooksCount = books
+  .filter(book => book.genre === 'Science') // Filter "Science" books
+  .map(book => book.title) // Map to their titles
+  .reduce((count, current) => count + 1, 0); // Count the number of books
+
+console.log("Number of Science Books:", scienceBooksCount);
+//Number of Science Books: 2
