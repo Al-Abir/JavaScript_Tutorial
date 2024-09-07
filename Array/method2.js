@@ -22,4 +22,18 @@ console.log(newArray);
   const newReduce = arr.reduce((a,b)=>{
       return a+b;
    })
-console.log(newReduce)
+/*console.log(newReduce)
+Given arr = [10, 20, 30], here's how reduce works:
+
+First Iteration:
+
+Initial value of a: 10 (the first element of the array)
+Current element b: 20 (the second element)
+a + b = 10 + 20 = 30
+New a: 30
+Second Iteration:
+
+Current element b: 30 (the third element)
+a + b = 30 + 30 = 60
+New a: 60
+*/
