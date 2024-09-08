@@ -20,7 +20,7 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 Object.defineProperty(chai, 'name', {
     //writable: false,
-    enumerable: true,
+    enumerable: true, //loop
     
 })
 
@@ -32,3 +32,5 @@ for (let [key, value] of Object.entries(chai)) {
         console.log(`${key} : ${value}`);
     }
 }
+
+//video 47

@@ -12,3 +12,20 @@ const addToLocalStorage = () => {
     idInput.value = '';
     valueInput.value = ''; // Corrected the issue here
 }
+
+/*
+console.log("Hello every ONe");
+let imarray = ['abir','tosher', 'Faisal']
+
+localStorage.setItem('name','abir')
+localStorage.setItem('nam2','Nahian')
+localStorage.setItem('arr',JSON.stringify(imarray));
+
+localStorage.getItem('name')
+let a = JSON.parse(localStorage.getItem('arr'))
+
+localStorage.clear()
+localStorage.removeItem('name')
+
+
+sessionStorage-> getItem,setItem,clear(),removeItem() same as work in localStorage. */
