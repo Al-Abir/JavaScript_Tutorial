@@ -25,6 +25,10 @@ None-Primitive Data types
 key value pair example:
 name:roll;
 item:Price;
+
+1.object
+2.Array
+3.Function
 */
 const item = {
       "abir":true,

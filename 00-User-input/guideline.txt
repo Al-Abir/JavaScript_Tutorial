@@ -1,0 +1,10 @@
+
+
+step 1:
+var prompt = require('prompt-sync')();
+
+step 2:
+npm init -y
+
+step 3:
+npm i prompt-sync
